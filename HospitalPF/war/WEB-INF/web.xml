@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<!-- Filter needed for Objectify -->
+  <filter>
+    <filter-name>ObjectifyFilter</filter-name>
+    <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ObjectifyFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+	<servlet>
+		<servlet-name>HospitalPF</servlet-name>
+		<servlet-class>com.HPF.HospitalPFServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HospitalPF</servlet-name>
+		<url-pattern>/hospitalpf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SignupDriver</servlet-name>
+		<servlet-class>swe.SignupDriver</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignupDriver</servlet-name>
+		<url-pattern>/SignupDriver</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SignupManager</servlet-name>
+		<servlet-class>swe.SignupManager</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignupManager</servlet-name>
+		<url-pattern>/SignupManager</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginDriver</servlet-name>
+		<servlet-class>swe.LoginDriver</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginDriver</servlet-name>
+		<url-pattern>/LoginDriver</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginManager</servlet-name>
+		<servlet-class>swe.LoginManager</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginManager</servlet-name>
+		<url-pattern>/LoginManager</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>swe.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReserveBeds</servlet-name>
+		<servlet-class>swe.ReserveBeds</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReserveBeds</servlet-name>
+		<url-pattern>/ReserveBeds</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>homePage.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

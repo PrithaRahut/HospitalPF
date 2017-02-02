@@ -1,0 +1,124 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hospital Path Finder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100|Open+Sans|Poiret+One:400|Alegreya+Sans+SC:100|Raleway:100,400|Josefin+Sans:400|Source+Code+Pro:400" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="style.css"></link>
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body> 
+	  	<main>
+		  	<div id='bar'>
+			  	<nav>
+				    <div class="nav-wrapper">
+				      <a href="#" class="brand-logo center">Registeration Form</a>
+				      <ul id="nav" class="left">
+				        <li><i class="material-icons"><a href="loginpage.jsp">home</a></i></li>
+				      </ul>
+				      <ul id="nav" class="right">
+				        <li>Hospital Path Finder</li>
+				      </ul>
+				    </div>
+				</nav>	  		
+		  	</div>
+
+		  	<form action="signupcheck.jsp" method="POST" id="myform">
+				<div id='top' class="row">
+		  		    <p class="col s6 center">
+				      <input class="with-gap" name="user-type" value="driver" type="radio" id="drv" />
+				      <label for="drv">Driver</label>
+				    </p>
+				    <p class="col s6 center">
+				      <input class="with-gap" name="user-type" value="manager" type="radio" id="mgr" />
+				      <label for="mgr">Manager</label>
+				    </p>
+			    
+				</div>
+				<div id='cen' class="row">
+
+					<div class="input-field col s6">
+					  <input id="name" name="name" type="text" class="validate">
+					  <label for="name">Name</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="mail" name="email" type="email" class="validate">
+					  <label for="mail">E-mail Id</label>
+					</div>
+					<div class="input-field col s6">
+					<input id="hospital" name="hospital" type="text" class="validate">
+					<label for="hospital">Hospital</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="no" name="mobile" type="text" class="validate">
+					  <label for="no">Mobile No.</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="hno" name="hospitalno" type="text" class="validate">
+					  <label for="hno" disabled>Hospital No.</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="pass" name="pass" type="password" class="validate">
+					  <label for="pass">Password</label>
+					</div>
+					
+					<div class="input-field col s6">
+					  <input id="cno" name="cabno" type="text" class="validate">
+					  <label for="cno">Cab No.</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="beds" name="beds" type="text" class="validate">
+					  <label for="beds">Total no of beds</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="add" name="add" type="text" class="validate">
+					  <label for="add">Address</label>
+					</div>
+					<div class="input-field col s6">
+					  <input id="pass2" name="conf" type="password" class="validate">
+					  <label for="pass2">Confirm Password</label>
+					</div>
+				</div>
+				<div id='bot' class="row center">
+					<button class="btn waves-effect waves-light" type="submit" name="action" value="submit">Submit <i class="material-icons right">send</i>
+				</div>
+			</form>
+	    </main>
+		<!-- Scripts -->
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	    <script>
+		$(document).ready(function() {
+		    $('select').material_select();
+			$("#myform input[type=radio]").on('change', function(){
+				if($("input[type=radio]:checked", '#myform').val() == 'driver'){
+					console.log('driver');
+					$("#hno").prop("disabled", true);
+					$("#hospital").prop("disabled", true);
+					$("#beds").prop("disabled", true);
+					$("#cno").prop("disabled", false);
+					$("#add").prop("disabled", true);
+				}
+				else if($("input[type=radio]:checked", '#myform').val() == 'manager'){
+					console.log("manager");
+					$("#cno").prop("disabled", true);
+					$("#hno").prop("disabled", false);
+					$("#beds").prop("disabled", false);
+					$("#add").prop("disabled", false);
+					$("#hospital").prop("disabled", false);
+				}
+			});
+		  });
+  </script>		  
+	</body>
+</html>

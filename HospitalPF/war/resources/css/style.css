@@ -1,0 +1,67 @@
+#first:before{
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url(../doctor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+	-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.content {
+	z-index: 1;
+	color: rgb(51,51,255);
+}
+
+h1{
+	font-family: 'Proza Libre', sans-serif;
+	font-weight: 700;
+	
+}
+#about{
+	text-align: center;
+	font-family: 'Muli', serif;
+	font-size: 25px;
+	line-height: 200%;
+	text-shadow: 1px 1px 1px black;
+}
+
+.logRegBtn .btn{
+	font-size: 20px;
+}
+/*
+.myBtn {
+	width: 49%;
+	font-size: 25px;
+	background-color: rgb(51,51,255);
+	color: white;
+	transition: 1s linear all;
+	border: none;
+}
+.myBtn:hover {
+	background-color: white;
+	color: black;
+}
+
+.loginBtn {
+	border-radius: 25px 2px 25px 2px;
+	transition: 0.8s linear all;
+}
+.loginBtn:hover {
+	border-radius: 0px;
+}
+
+.registerBtn {
+	border-radius: 0px 25px 0px 25px;
+	transition: 0.8s linear all;
+}
+.registerBtn:hover {
+	border-radius: 0px;
+}*/

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simple Form</title>
+</head>
+<body>
+<form action="xmlServletpath" method="post">
+	Username: <input name="userName" />
+	
+	<br>
+	<select name="location">
+		<option value="here"><option/>
+		<option value="there"><option/>
+		<option value="nowhere"><option/>
+		<option value="far"><option/>
+	</select>
+	<br>
+	<input type="submit" />
+	
+</form>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SignupDriver.java&apos; to &apos;HospitalPF/src/swe&apos;&#x0D;&#x0A;- Original project: &apos;SimpleServletProject&apos;&#x0D;&#x0A;- Destination element: &apos;HospitalPF/src/swe&apos;&#x0D;&#x0A;- Original element: &apos;swe.SignupDriver.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=HospitalPF/src&lt;swe" element1="/src&lt;swe{SignupDriver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1479203163999" units="1" version="1.0"/>
+</session>

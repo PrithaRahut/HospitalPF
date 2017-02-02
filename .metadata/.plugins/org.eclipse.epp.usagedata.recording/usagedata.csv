@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.",1466055338218
+error,log,,,"Provisioning exception",1466055345808
+error,log,,,"Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.1.jar.",1466055345811
+error,log,,,"Provisioning exception",1466055347048
+error,log,,,"Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.1.jar.",1466055347050
+error,log,,,"Provisioning exception",1466055348302
+error,log,,,"Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.3.jar.",1466055348306
+error,log,,,"Provisioning exception",1466055349571
+error,log,,,"Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v21.feature_2.1.3.jar.",1466055349574
+error,log,,,"Provisioning exception",1466055350876
+error,log,,,"Error reading feature http://public.dhe.ibm.com/software/websphere/wasce/updates/features/com.ibm.wasce.v20.feature_2.1.4.jar.",1466055350879
+started,bundle,org.eclipse.jst.server.core,1.2.202.v20110419,"org.eclipse.jst.server.core",1466055373767
+started,bundle,org.eclipse.jst.server.tomcat.ui,1.1.200.v20100418,"org.eclipse.jst.server.tomcat.ui",1466055373848
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466055427992
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466055444629
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466069103447
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466069106482
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466079790071
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466079846238
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466089523398
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466089527188
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466089529142
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1466089529574
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1466089530550
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1466089530558

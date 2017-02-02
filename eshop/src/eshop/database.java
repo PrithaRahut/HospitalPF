@@ -1,0 +1,37 @@
+package eshop;
+
+import java.sql.*;
+
+
+public class database {
+	
+	public static final String MYSQL_IP="localhost";
+	public static final String MYSQL_PORT="3306";
+	public static final String DATABASE_NAME="eshop";
+	public static final String MYSQL_USER="root";
+	public static final String MYSQL_PWD="";
+	
+	static{
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void dataRetrieve() throws SQLException, ClassNotFoundException{
+		//Class.forName("com.mysql.jdbc.driver");
+		Connection conn=DriverManager.getConnection("jdbc.mysql://"+MYSQL_IP+":"+MYSQL_PORT+"/"+DATABASE_NAME,MYSQL_USER,MYSQL_PWD);
+		Statement stmt=conn.createStatement();
+		String query="SELECT * FROM customers";
+		ResultSet rst=stmt.executeQuery(query); 
+		
+		while(rst.next()){
+			String name=rst.getString("name");
+			System.out.println("name:"+ name);
+		}
+		
+	}
+
+}
