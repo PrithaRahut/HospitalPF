@@ -16,12 +16,13 @@ public class InviteCustomers {
 		double inilat=Math.toRadians(lat1);
 		//double inilng=Math.toRadians(lng1);
 		BufferedReader br=null;
-		br=new BufferedReader(new FileReader("C:\\Users\\hp\\Documents\\customers.json"));
+		br=new BufferedReader(new FileReader("./customers.json"));
 		StringBuffer fileContent=new StringBuffer();
 		String line=null;
 		while((line=br.readLine())!=null){
 			fileContent.append(line);	
 		}
+		br.close();
 		
 		//System.out.println(fileContent.toString());
 		

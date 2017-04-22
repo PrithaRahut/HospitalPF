@@ -1,0 +1,92 @@
+{
+	"customers": [
+		{
+			"name" : "Parth",
+			"id" : 1,
+			"address":{
+				"lat": 12.6830868,
+    			"lng": 77.8086443
+			}
+		},
+		{
+			"name" : "Pritha",
+			"id" : 2,
+			"address":{
+				"lat": 12.9201008,
+    			"lng": 77.5763792
+			}
+		},
+		{
+			"name" : "Pakhi",
+			"id" : 3,
+			"address":{
+				"lat": 12.8894459,
+    			"lng": 77.582765
+			}
+		},
+		{
+			"name" : "Pankhudi",
+			"id" : 4,
+			"address":{
+				"lat": 12.8894459,
+    			"lng": 77.582765
+			}
+		},
+		{
+			"name" : "Pooja",
+			"id" : 5,
+			"address":{
+				"lat": 12.8839425,
+    			"lng": 77.5991579
+			}
+		},
+		{
+			"name" : "Palash",
+			"id" : 6,
+			"address":{
+				"lat": 12.9389304,
+    			"lng": 77.6152225
+			}
+		},
+		{
+			"name" : "Priya",
+			"id" : 7,
+			"address":{
+				"lat": 12.9192161,
+    			"lng": 77.6206602
+			}
+		},
+		{
+			"name" : "Prashant",
+			"id" : 8,
+			"address":{
+				"lat": 12.9268351,
+    			"lng": 77.6238153
+			}
+		},
+		{
+			"name" : "Prakhar",
+			"id" : 9,
+			"address":{
+				"lat": 12.9335624,
+    			"lng": 77.6202826
+			}
+		},
+		{
+			"name" : "Pranay",
+			"id" : 10,
+			"address":{
+				"lat": 12.9334895,
+    			"lng": 77.6202715
+			}
+		},
+		{
+			"name" : "Pranjal",
+			"id" : 11,
+			"address":{
+				"lat": 12.9334895,
+    			"lng": 77.6202715
+			}
+		}
+	]
+}
